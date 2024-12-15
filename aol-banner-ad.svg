@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468 60" style="background-color: white;">
+  <defs>
+    <linearGradient id="aol-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6699FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="468" height="60" fill="url(#aol-gradient)"/>
+  
+  <!-- AOL Running Man Logo Simulation -->
+  <path d="M20,30 Q40,10 60,30 T100,30" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="40" cy="30" r="5" fill="white"/>
+  <circle cx="80" cy="30" r="5" fill="white"/>
+  
+  <!-- Text -->
+  <text x="120" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    AOL: 10,000 FREE HOURS!
+  </text>
+  <text x="120" y="45" font-family="Arial, sans-serif" font-size="12" fill="white">
+    UNLIMITED INTERNET ACCESS!
+  </text>
+  
+  <!-- Decorative Border -->
+  <rect x="0" y="0" width="468" height="60" fill="none" stroke="black" stroke-width="3"/>
+</svg>
