@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Explorer 4.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="retrostyle.css">
+</head>
+<body>
+    <div class="browser-container">
+        <header class="browser-header">
+            <h1 class="glitch-text">Internet Explorer 4.0</h1>
+            <div class="window-controls">
+                <button aria-label="Minimize">-</button>
+                <button aria-label="Maximize">□</button>
+                <button aria-label="Close">X</button>
+            </div>
+        </header>
+
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="#">File</a></li>
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <div class="tabs-container" id="tabsContainer">
+            <button class="tab" onclick="selectTab(this)">
+                🌐 Welcome to the Internet!
+                <button class="tab-close" onclick="closeTab(event)" aria-label="Close tab">X</button>
+            </button>
+            <button class="tab-add" onclick="addNewTab()" aria-label="Add new tab">+</button>
+        </div>
+        
+        <div class="browser-content">
+            <aside class="sidebar">
+                <h3>Favorites</h3>
+                <ul>
+                    <li><a href="#">🏠 MSN Homepage</a></li>
+                    <li><a href="#">📰 Yahoo! News</a></li>
+                    <li><a href="#">📧 Hotmail</a></li>
+                    <li><a href="#">🎮 GameSpot</a></li>
+                    <li><a href="#">📰 CNET News</a></li>
+                </ul>
+            </aside>
+
+            <main class="main-view">
+                <div class="retro-marquee" style="background: var(--bg-secondary);">
+                    <marquee behavior="scroll" direction="left" style="color: ghostwhite;">Welcome to the Internet Explorer 4.0!</marquee>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Enter Web Address (URL)" id="searchInput" aria-label="Search or enter web address">
+                    <button class="search-button" onclick="performSearch()">Go!</button>
+                </div>
+
+                <h2>Welcome to the World Wide Web!</h2>
+                <p>Surf the Information Superhighway with Internet Explorer 4.0</p>
+                <button class="pixel-button" onclick="showRetroModal()">Explore Web Channels</button>
+                <section class="banner-ads-section">
+                    <div class="banner-ads-grid">
+                        <div class="banner-ad banner-ad-animated" onclick="alert('🌟 FREE Download - Only on GeoCities! 🌟')">
+                            <div class="banner-content">
+                                <img src="1Kj6.gif" alt="Under Construction" style="height: 30px;width: auto;">
+                                <span class="blink">DOWNLOAD NOW!</span>
+                            </div>
+                        </div>
+                
+                        <div class="banner-ad banner-ad-hot" onclick="alert('🔥 Hot New Website Alert! 🔥')">
+                            <div class="fire-text">HOT!</div>
+                            <div class="banner-content-hot">
+                                <div class="rotating-text">NEW WEBSITE!</div>
+                                <div class="visitor-count">Visitor #1337</div>
+                            </div>
+                        </div>
+                
+                        <div class="banner-ad banner-ad-webring">
+                            <div class="webring-buttons">
+                                <button>← Previous</button>
+                                <button>Random</button>
+                                <button>Next →</button>
+                            </div>
+                            <div class="webring-text" style="color: ghostwhite;">Join Our WebRing!</div>
+                        </div>
+                
+                        <div class="banner-ad banner-ad-netscape">
+                            <img src="netscape.png" alt="Netscape Now!" style="height: 30px;width: auto;">
+                            <div class="banner-badge">BEST WITH NETSCAPE!</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="retro-features">
+                    <div class="guestbook">
+                        <div class="guestbook-header">
+                            
+                            <h3><img src="guestbook.jpg" alt="📖" style="height: 30px;width: auto;"> Sign Our Guestbook!</h3>
+                        </div>
+                        <div class="guestbook-entries">
+                            <div class="guestbook-entry">
+                                <span class="entry-date">09/14/1998</span>
+                                <p>Cool website! Love the graphics! 🌟</p>
+                                <span class="entry-name">- CyberSurfer2000</span>
+                            </div>
+                        </div>
+                        <button class="retro-button sign-button">Sign Guestbook!</button>
+                    </div>
+                
+                    <div class="web-awards">
+                        <h3 class="awards-header">🏆 Site Awards 🏆</h3>
+                        <div class="awards-container">
+                            <img src="6x6G.gif" alt="Best Site Award" style="height: 50px;width: auto;">
+                            <img src="GrBp.gif" alt="Cool Site Award" style="height: 50px;width: auto;">
+                            <img src="1j6F.gif" alt="Web Excellence" style="height: 50px;width: auto;">
+                        </div>
+                    </div>
+                
+                    <div class="download-section">
+                        <div class="download-header">
+                            
+                            <h3><img src="OK4w.gif" alt="💾" style="height: 20px;width: auto;"> Cool Downloads!</h3>
+                        </div>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <img src="music.jpg" alt="🎵" style="height: 20px;width: auto;">
+                                <span>Background Music (MIDI)</span>
+                                <div class="file-size">23KB</div>
+                                <button class="download-button">Download</button>
+                            </div>
+                            <div class="download-item">
+                                <img src="4Cb2.gif" alt="🖼️" style="height: 30px;width: auto;">
+                                <span>Cool Wallpaper</span>
+                                <div class="file-size">156KB</div>
+                                <button class="download-button">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+                
+                <div class="under-construction">
+                    🚧 THIS SITE IS UNDER CONSTRUCTION! 🚧
+                </div>
+                <div>
+
+                    <footer class="retro-footer">
+                        <div class="footer-content">
+                            
+                            <div class="footer-badges">
+                                <img src="logo.jpg" alt="Internet Explorer Logo" class="footer-badge" style="height: 50px;width: auto;">
+                                <img src="html.jpg" alt="HTML 3.2 Valid" class="footer-badge" style="height: 50px;width: auto;">
+                                
+                            </div>
+                            <div class="copyright">
+                                © 1998 YourWebsite. All rights reserved.
+                            </div>
+                        </div>
+                        <div class="webmaster-info">
+                            <span>Webmaster: </span>
+                            <a href="mailto:webmaster@yourwebsite.com">internetforall@codedex.com</a>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="retroscript.js"></script>
+</body>
+</html>
