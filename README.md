@@ -22,7 +22,7 @@ Welcome to the **Internet Explorer 4.0 Simulator**, a retro-styled project that 
 ## 🖥️ Preview
 
 Hosted live on **GitHub Pages**:  
-[Explore the Retro Simulator](https://<your-username>.github.io/retro-simulator/)  
+[Explore the Retro Simulator](https://ashiiish-88.github.io/InternetExplorer/)  
 *Ashiiish-88*
 
 ---
